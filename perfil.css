@@ -1,9 +1,9 @@
 body {
-    background-color: #012030;
+    background-color: #16253a;
 }
 
 .div1 {
-    background-color: #203756;
+    background-color: #1f3655;
     border-radius: 30px;
     padding: 20px 20px 20px 20px;
     position: relative;
@@ -39,9 +39,8 @@ h2 {
 
 .div11 {
     width: 30%;
-    background-color: #801818;
     margin-right: 10px;
-    height: 20vh;
+    height: 30%;
 }
 
 img {

@@ -1,0 +1,154 @@
+/* --- Estilos do Cabeçalho de Chat --- */
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 10px;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.back-icon,
+.reset-icon {
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+/* --- Área de Mensagens (Onde a Mágica Acontece) --- */
+
+.chat-area {
+    flex-grow: 1;
+    /* Permite que a área de chat ocupe o espaço restante */
+    padding: 20px;
+    overflow-y: auto;
+    /* Adiciona rolagem se as mensagens excederem a altura */
+    background-color: var(--primary-dark);
+    /* Fundo escuro */
+    color: var(--text-light);
+}
+
+.message {
+    max-width: 85%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+/* Estilo para Mensagens do Usuário */
+
+.user-message {
+    background-color: var(--card-blue);
+    /* Azul do seu app */
+    color: var(--text-light);
+    margin-left: auto;
+    /* Alinha à direita */
+    border-top-right-radius: 5px;
+    /* Deixa o canto superior direito reto */
+}
+
+
+/* Estilo para Mensagens da IA */
+
+.ia-message {
+    background-color: var(--secondary-dark);
+    /* Azul mais escuro/fundo do app */
+    color: var(--text-light);
+    margin-right: auto;
+    /* Alinha à esquerda */
+    border-top-left-radius: 5px;
+    /* Deixa o canto superior esquerdo reto */
+}
+
+.ia-message p {
+    margin: 0;
+}
+
+
+/* Sugestão de Ação da IA */
+
+.ia-action-suggestion {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.suggestion-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: var(--card-green);
+    /* Destaque verde para sugestões de saúde */
+}
+
+
+/* --- Barra de Entrada (Input Bar) --- */
+
+.input-bar {
+    display: flex;
+    padding: 15px 20px;
+    background-color: var(--secondary-dark);
+    /* Cor escura para a barra inferior */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fundo claro para o input */
+    font-size: 15px;
+    margin: 0 10px;
+    color: var(--text-dark);
+}
+
+.chat-input::placeholder {
+    color: #888;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    color: var(--card-blue);
+    cursor: pointer;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.icon-send {
+    background-color: var(--card-blue);
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.icon-clip {
+    font-size: 18px;
+    color: var(--text-light);
+}
+
+.icon-clip:hover,
+.icon-send:hover {
+    opacity: 0.8;
+}
